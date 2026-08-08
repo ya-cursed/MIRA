@@ -59,18 +59,18 @@ export default {
                 description: `Here is the current financial status for ${targetUser.username}.`,
             })
                 .addFields(
-                    {
-                     
-                        name: "Барашек", value: `<:sheep:123456789012345678>${wallet.toLocaleString()}`,
+                 {
+                        name: "Барашек",
+                        value: `<:sheep:123456789012345678>${wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
-                        name: "🏦 Bank",
-                        value: `<:sheep:123456789012345678>${bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
+                        name: "Банк",
+                        value: `<:sheep:123456789012345678>${bank.toLocaleString()} / <:sheep:123456789012345678>${maxBank.toLocaleString()}`,
                         inline: true,
                     },
                     {
-                        name: "Барашков",
+                        name: "Всего",
                         value: `<:sheep:123456789012345678>${(wallet + bank).toLocaleString()}`,
                         inline: true,
                     }
