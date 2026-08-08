@@ -61,7 +61,7 @@ export default {
                 .addFields(
                     {
                         name: "Барашек",
-                        value: `𓃿${wallet.toLocaleString()}`,
+                        value: `🎀${wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
