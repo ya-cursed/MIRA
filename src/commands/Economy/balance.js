@@ -56,7 +56,7 @@ export default {
 
             const embed = createEmbed({
                 title: `${targetUser.username}'s Balance`,
-                description: `Member's current balance ${targetUser.username}.`,
+                description: `Текущий баланс участника ${targetUser.username}.`,
             })
                 .addFields(
                  {
