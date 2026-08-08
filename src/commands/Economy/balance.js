@@ -61,17 +61,17 @@ export default {
                 .addFields(
                     {
                         name: "Барашек",
-                        value: `$${wallet.toLocaleString()}`,
+                        value: `𓃿${wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
                         name: "🏦 Bank",
-                        value: `${bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
+                        value: `𓃿${bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
                         inline: true,
                     },
                     {
-                        name: "Барашек",
-                        value: `$${(wallet + bank).toLocaleString()}`,
+                        name: "Барашков",
+                        value: `𓃿${(wallet + bank).toLocaleString()}`,
                         inline: true,
                     }
                 )
