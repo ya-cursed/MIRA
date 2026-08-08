@@ -161,11 +161,11 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Барашек",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Барашек",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "🐑",
     },
 
     // Starting balance for new users.
@@ -175,15 +175,15 @@ export const botConfig = {
     baseBankCapacity: 100000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 150,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 55,
+    workMax: 150,
 
     // Beg command random payout range.
-    begMin: 5,
-    begMax: 50,
+    begMin: 1,
+    begMax: 55,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -194,7 +194,7 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.03,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
@@ -206,6 +206,32 @@ export const botConfig = {
   // =========================
   // Add shop defaults here when needed.
   shop: {
+  roles: [
+    {
+      id: "ROLE_ID_1",
+      name: "$",
+      price: 600,
+      description: "Проверка."
+    },
+    {
+      id: "ROLE_ID_2",
+      name: "Тролль",
+      price: 2000,
+      description: "Ыыы."
+    },
+    {
+      id: "ROLE_ID_3",
+      name: "Сухарь",
+      price: 5000,
+      description: "Особая VIP-роль."
+    },
+    {
+      id: "ROLE_ID_4",
+      name: "Хлеб",
+      price: 7777,
+      description: "Эксклюзивная Premium-роль."
+    }
+  ]
 
   },
 
