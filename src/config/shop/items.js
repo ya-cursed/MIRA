@@ -1,16 +1,11 @@
 export const shopItems = [
     {
-        id: 'extra_work',
-        name: 'Сухарь',
+        id: '1535626990554583061',
+        name: 'Хлеб',
         price: 600,
-        description: 'Allows 1 extra use of the `/work` command.',
-        type: 'consumable',
-        maxQuantity: 5,
-cooldown: 86400000,
-        effect: {
-            type: 'command_boost',
-            command: 'work',
-            uses: 1
+        description: 'Ролька.',
+        type: 'role',
+        maxQuantity: 1,
         }
     },
     {
@@ -205,30 +200,3 @@ export function validatePurchase(itemId, userData) {
 export const shopItems = [
   // ... other items
   {
-    id: '1535626990554583061',
-    type: 'role',            // must match shopConfig category
-    name: 'хлеб',
-    description: 'Grants access to VIP channels and perks.',
-    price: 7777,
-    stock: null,             // null or a number
-    roleId: 'ROLE_ID_IN_GUILD', // store guild role ID (per-guild mapping recommended)
-    duration: null           // null for permanent, or milliseconds for temporary (e.g., 7 * 24 * 60 * 60 * 1000)
-  }
-];
-export function getItemById(id) {
-  return shopItems.find(i => i.id === id);
-}
-export function getItemsByType(type) {
-  return shopItems.filter(i => i.type === type);
-}
-export function getItemPrice(id) {
-  const item = getItemById(id);
-  return item ? item.price : 0;
-}
-export function validatePurchase(user, item, quantity = 1) {
-  // basic validation: exist, stock, quantity limits
-  if (!item) return { ok: false, reason: 'ITEM_NOT_FOUND' };
-  if (item.stock !== null && item.stock < quantity) return { ok: false, reason: 'OUT_OF_STOCK' };
-  // additional checks (user level, role already owned, etc.) can go here
-  return { ok: true };
-}
