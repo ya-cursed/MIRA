@@ -206,33 +206,7 @@ export const botConfig = {
   // =========================
   // Add shop defaults here when needed.
   shop: {
-  roles: [
-    {
-      id: "ROLE_ID_1",
-      name: "$",
-      price: 600,
-      description: "Проверка."
-    },
-    {
-      id: "ROLE_ID_2",
-      name: "Тролль",
-      price: 2000,
-      description: "Ыыы."
-    },
-    {
-      id: "ROLE_ID_3",
-      name: "Сухарь",
-      price: 5000,
-      description: "Особая VIP-роль."
-    },
-    {
-      id: "ROLE_ID_4",
-      name: "Хлеб",
-      price: 7777,
-      description: "Эксклюзивная Premium-роль."
-    }
-  ]
-
+  
   },
 
   // =========================
