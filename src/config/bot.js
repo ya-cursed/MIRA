@@ -23,8 +23,8 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        name: "Пользовательский статус", // required by Discord API, not shown in the client
+        state: "Подглядываю",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -61,9 +61,9 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Как тебя зовут?", required: true },
+      { question: "Сколько тебе лет?", required: true },
+      { question: "Почему ты хочешь присоединиться?", required: true },
     ],
 
     // Embed colors by application status.
@@ -372,11 +372,11 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Добро пожаловать {user} на сервер {server}! У нас новый участник {memberCount}!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user} покиндает наш сервер. С нами больше нет участника {memberCount}.",
     // Channel ID for welcome messages.
     defaultWelcomeChannel: null,
     // Channel ID for goodbye messages.
@@ -411,19 +411,19 @@ export const botConfig = {
     types: {
       // Built-in counter types and how each count is calculated.
       members: {
-        name: "👥 Members",
-        description: "Total members in the server",
+        name: "👥 Участиники",
+        description: "Всего участников на сервере",
         getCount: (guild) => guild.memberCount.toString(),
       },
       bots: {
-        name: "🤖 Bots",
-        description: "Total bot accounts in the server",
+        name: "🤖 Боты",
+        description: "Всего ботов на сервере",
         getCount: (guild) =>
           guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
       members_only: {
-        name: "👤 Humans",
-        description: "Total human members (non-bots)",
+        name: "👤 Участник",
+        description: "Общее число участников (за исключением ботов)",
         getCount: (guild) =>
           guild.members.cache.filter((m) => !m.user.bot).size.toString(),
       },
@@ -434,13 +434,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "У вас нет прав на использование этой команды.",
+    cooldownActive: "Пожалуйста, подождите {время} перед повторным использованием этой команды.",
+    errorOccurred: "При выполнении этой команды произошла ошибка.",
     missingPermissions:
-      "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+      "У меня отсутствуют необходимые права для выполнения этого действия.",
+    commandDisabled: "Эта команда отключена.",
+    maintenanceMode: "В данный момент бот находится в режиме технического обслуживания.",
   },
 
   // =========================
