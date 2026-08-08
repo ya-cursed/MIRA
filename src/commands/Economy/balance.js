@@ -60,8 +60,8 @@ export default {
             })
                 .addFields(
                     {
-                        value: `<:sheep:123456789012345678>${wallet.toLocaleString()}`,
-                        name: "Барашек",
+                     
+                        name: "Барашек", value: `<:sheep:123456789012345678>${wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
