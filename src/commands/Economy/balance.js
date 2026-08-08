@@ -7,12 +7,12 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('balance')
-        .setDescription("Check your or someone else's balance")
+        .setName('Баланс')
+        .setDescription("Проверить свой или чей-то баланс")
         .addUserOption(option =>
             option
                 .setName('user')
-                .setDescription('User to check balance for')
+                .setDescription('Пользователь чей баланс нужно проверить')
                 .setRequired(false)
         ),
 
@@ -56,7 +56,7 @@ export default {
 
             const embed = createEmbed({
                 title: `${targetUser.username}'s Balance`,
-                description: `Here is the current financial status for ${targetUser.username}.`,
+                description: `Текущий баланс участника ${targetUser.username}.`,
             })
                 .addFields(
                  {
@@ -76,7 +76,7 @@ export default {
                     }
                 )
                 .setFooter({
-                    text: `Requested by ${interaction.user.tag}`,
+                    text: `Запрошено от ${interaction.user.tag}`,
                     iconURL: interaction.user.displayAvatarURL(),
                 });
 
