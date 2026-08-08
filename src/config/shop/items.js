@@ -38,9 +38,9 @@ cooldown: 86400000,
         }
     },
     {
-        id: 'premium_role',
-        name: 'Premium Server Role',
-        price: 15000,
+        id: '1535627207714807911',
+        name: 'Тролль',
+        price: 1500,
         description: 'A special role granting a fancy color and a 10% daily bonus.',
         type: 'role',
 roleId: null,
